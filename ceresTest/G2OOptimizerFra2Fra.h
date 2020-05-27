@@ -3,11 +3,12 @@
 
 struct Fra2FraTransEdge
 {
-	Fra2FraTransEdge(int _ntargetFrameOffset, int _nsourceFrameOffset, Eigen::Vector3d _transPose)
+	Fra2FraTransEdge(int _ntargetFrameOffset, int _nsourceFrameOffset, Eigen::Vector3d _transPose,double EdgeInf)
 	{
 		ntargetFrameOffset = _ntargetFrameOffset;
 		nsourceFrameOffset = _nsourceFrameOffset;
 		transPose = _transPose;
+		InfoMatrix = Eigen::Matrix3d::Identity() * EdgeInf * EdgeInf;
 	}
 	void Coutinf()
 	{
@@ -20,6 +21,7 @@ struct Fra2FraTransEdge
 	}
 	int ntargetFrameOffset;
 	int nsourceFrameOffset;
+	Eigen::Matrix3d InfoMatrix;
 	Eigen::Vector3d transPose;
 };
 

@@ -128,7 +128,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_USE_MATH_DEFINES;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_USE_MATH_DEFINES;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_USE_WINDOWS_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(VcpkgRoot)include\EXTERNAL\csparse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -145,10 +145,13 @@
     <ClCompile Include="G2OOptimizerFra2Fra.cpp" />
     <ClCompile Include="G2OOptimizerICP.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PCLRigidTransformation .cpp" />
+    <ClCompile Include="PCLRigidTransformation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="G2OOptimizerFra2Fra.h" />
     <ClInclude Include="G2OOptimizerICP.h" />
+    <ClInclude Include="PCLRigidTransformation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

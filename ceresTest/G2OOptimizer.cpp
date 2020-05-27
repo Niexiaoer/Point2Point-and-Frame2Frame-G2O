@@ -144,7 +144,7 @@ void ConstructObserEdge(const std::vector<LandMarkObservation>& vLandMarkObserva
 	}
 }
 
-void computeError(const std::vector<Eigen::Vector3d>& vv3dLiDARRealPose, 
+void AnalyzeError(const std::vector<Eigen::Vector3d>& vv3dLiDARRealPose,
 	const std::vector<Eigen::Vector3d>& vv3dLiDARInitialPoseGuess,
 	const std::vector<Eigen::Vector3d>& vv3dLiDARFinalPose)
 {

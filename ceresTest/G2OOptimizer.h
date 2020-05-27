@@ -125,7 +125,7 @@ void GenerateObservations(const std::vector<Eigen::Vector2d>& vv2dLandMarkLib,
 void ConstructObserEdge(const std::vector<LandMarkObservation>& vLandMarkObservations,
 	std::vector<LandMarkObservationEdge>& vLandMarkObservationEdges);
 
-//Compute the pose error
-void computeError(const std::vector<Eigen::Vector3d>& vv3dLiDARRealPose,
+//Analyze the pose error
+void AnalyzeError(const std::vector<Eigen::Vector3d>& vv3dLiDARRealPose,
 	const std::vector<Eigen::Vector3d>& vv3dLiDARInitialPoseGuess,
 	const std::vector<Eigen::Vector3d>& vv3dLiDARFinalPose);

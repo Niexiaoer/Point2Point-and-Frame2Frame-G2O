@@ -42,9 +42,9 @@ void G2O_OptimizerFra2Fra(const std::vector<Eigen::Vector3d>& vv3dLiDARInitialPo
 		edge->setVertex(0, vPose3dVertexs.at(edgeTmp.ntargetFrameOffset));
 		edge->setVertex(1, vPose3dVertexs.at(edgeTmp.nsourceFrameOffset));
 		edge->setMeasurement(edgeTmp.transPose);
-		Eigen::Matrix3d InfoMatrix = Eigen::Matrix3d::Identity();
-		InfoMatrix *= 10.0;
-		edge->setInformation(InfoMatrix);
+		//Eigen::Matrix3d InfoMatrix = Eigen::Matrix3d::Identity();
+		//InfoMatrix *= 10.0;
+		edge->setInformation(edgeTmp.InfoMatrix);
 		optimizer.addEdge(edge);
 	}
 	optimizer.initializeOptimization();

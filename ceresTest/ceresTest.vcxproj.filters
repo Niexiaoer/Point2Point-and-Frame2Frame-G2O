@@ -30,12 +30,21 @@
     <ClCompile Include="G2OOptimizerFra2Fra.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="PCLRigidTransformation .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PCLRigidTransformation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="G2OOptimizerICP.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="G2OOptimizerFra2Fra.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PCLRigidTransformation.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
